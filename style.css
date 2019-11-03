@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+button {
+    margin-left: 5%; 
+}
+.navbar {
+    background: rgba(24, 23, 23, 0.6);
+}
+/*Parallax*/
+#contflex2 {
+    margin: 0px;
+    width: 100%;
+}
+
+.paral {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 0 !important;
+    padding: 0px;
+}
+
+.paralsec .jumbotron-fluid {
+    background: none;
+    color: white;
+    text-align: justify;
+}
+
+.paralsec1 .jumbotron-fluid {
+    background: none;
+    color: white;
+    text-align: justify;
+    background: rgba(24, 23, 23, 0.9);
+    padding: 1em;
+}
+.paralsec2 h1{
+    color: white ;
+}
+
+.paralsec1 * {
+    padding: 0;
+}
+
+#bmb {
+    margin: 0px;
+}
+
+#jumbf {
+    padding: 2%;
+    max-height: 100vh;
+}
+
+/* Image pour le Parallax */
+
+.paralsec {
+    background-image: url("image/banner.jpg");
+    height: 100vh;
+}
+
+.paralsec1 {
+    background-image: url("image/pic02.jpg");
+    height: 100vh;
+}
+
+.paralsec2 {
+    background-image: url("image/pic03.jpg");
+    height: 100vh;
+}
+
+/* Fin image Parallax */
+
+.jumbotron {
+    margin-bottom: 0;
+}
+/* fin parallax */
+.wn-footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    color: white;
+    background: rgba(24, 23, 23, 0.9);
+    border-top: .05rem solid #ffffff;
+}
+
+.wn-footer a {
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:400px){
+    body{
+        font-size: 10px;
+    }
+    .navbar{
+        max-width: 100%;
+    }
+
+}
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+#sidebarCollapse{
+    width: 10vw;
+    background-color:rgba(24, 23, 23, 0.6);
+    color: grey;
+}
+.boutonslide {
+    height: 100vh;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: rgba(34, 35, 39, 0.589);
+    color: #fff;
+    transition: all 0.3s;
+    margin-left: -250px;
+}
+
+#sidebar.active {
+    margin-left: 0px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #232429;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+#sidebarCollapse{
+    margin-left: 0;
+
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
